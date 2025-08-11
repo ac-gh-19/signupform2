@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    display: flex;
+}
+
+
+.left-image {
+    width: 35vw;
+    height: 100vh;
+    background: url(assets/plsfit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-shrink: 0;
+}
+
+a {
+    /* text-decoration: none; */
+    font-family: inherit;
+    color: inherit;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35%;
+    font-size: 1.5rem;
+    gap: 1rem;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    padding: 1rem 0;
+    color: white;
+}
+
+.left-image > p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.logo > img {
+    width: 70px;
+    height: 80px;
+}
+
+.right-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-info,
+.bottom-info
+{
+    flex: 1 1 0;
+    background: rgb(239, 238, 238);
+    padding-left: 5%;
+}
+
+.head-info {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5%;
+}
+
+.bottom-info > *{
+    margin-top: 1.5rem;
+}
+
+.form-info {
+    /* display: flex; */
+    flex: 1 1 0;
+    background: rgb(255, 255, 255);
+    padding-left: 5%;
+}
+
+form > h1 {
+    margin: .5rem 0 1rem;
+}
+
+.head-text {
+    width: 70%;
+}
+
+.createAccBtn {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+}
+
+
+input {
+    display: block;
+    width: 15rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    padding-left: .3rem;
+} 
+
+.inputColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-image {
+        width: 100%;
+        height: 30vh;
+        background-position: top;
+        position: sticky;
+    }
+
+    .logo {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .head-info,
+    .bottom-info,
+    .form-info,
+    .input-container {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
