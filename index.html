@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,13 +23,13 @@
                 You know you want to.
             </h2>
         </div>
-        <form  class="form-info" action="/about" method="get">
+        <form  id="signupForm" class="form-info" method="get">
             <h1>Lets Sign Up</h1>
             <div class="input-container">
                 <div class="input-column">
                     <div class="input">
                         <label for="first_name">First Name: </label>
-                        <input type="text" id="first_name" name="first_name" required>
+                        <input type="text" id="first_name" name="first_name">
                     </div>
                     <div class="input">
                         <label for="email">Email: </label>
@@ -43,13 +43,13 @@
                 <div class="input-column">
                     <div class="input">
                         <label for="last_name">Last Name: </label>
-                        <input type="text" id="last_name" name="last_name" required>
+                        <input type="text" id="last_name" name="last_name">
                     </div>
                     <div class="input">
-                        <label for="username">username: </label>
-                        <input type="text" id="username" name="username">
+                        <label for="username">Username: </label>
+                        <input type="text" id="username" name="username" required minlength="3" maxlength="16">
                     </div>
-                    <div class="input">
+                    <div class="input required">
                         <label for="passwordConf">Confirm password: </label>
                         <input type="password" id="passwordConf" name="passwordConf" required>
                     </div>
@@ -57,7 +57,7 @@
             </div>
         </form>
         <div class="bottom-info">
-            <button class="createAccBtn">
+            <button class="createAccBtn" type="submit" form="signupForm">
                 Create Account
             </button>
             <p>
@@ -65,5 +65,7 @@
             </p>
         </div>
     </div>
+
+    <script src="javascript.js"></script>
 </body>
 </html>
